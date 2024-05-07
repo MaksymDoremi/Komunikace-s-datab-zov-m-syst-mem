@@ -10,7 +10,7 @@ namespace MySQLClient
 {
     public class DatabaseConnection
     {
-        private DatabaseConnection(){}
+        private DatabaseConnection() { }
 
         private static MySqlConnection _connection = null;
         private static readonly object _lock = new object();
@@ -26,7 +26,7 @@ namespace MySQLClient
                 {
                     if (_connection == null)
                     {
-                        _connection = new MySqlConnection("Database = Maturita; DataSource = localhost; UserId = root;");;
+                        _connection = new MySqlConnection("Database = Maturita; DataSource = localhost; UserId = root;"); ;
                     }
                 }
             }

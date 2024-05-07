@@ -9,15 +9,23 @@ namespace MySQLClient
     public class Passenger
     {
         protected string _name;
-        public Passenger(string name)
+        protected string _surname;
+        public Passenger(string name, string surname)
         {
             this.Name = name;
+            this.Surname = surname;
         }
 
         public string Name
         {
             get => this._name;
             set => this._name = value;
+        }
+
+        public string Surname
+        {
+            get => this._surname;
+            set => this._surname = value;
         }
 
         public void StaticMethod()
