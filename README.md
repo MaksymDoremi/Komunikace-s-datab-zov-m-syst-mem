@@ -1,4 +1,6 @@
 # SQL script
+
+```sql
 create database Maturita;
 
 
@@ -10,3 +12,4 @@ create table Passenger
     Name varchar(64) not null,
     Surname varchar(64) not null
 );
+```
